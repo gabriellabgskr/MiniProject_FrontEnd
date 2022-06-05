@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet');
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.bread-link {
+  color: #336c7c;
+  text-decoration: none;
+}
+
+.navbar-kanahome {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav-link {
+  color: #336c7c;
+}
+
+/* .kanahome-promo-product {
+        margin-top: 50px;
+      } */
+
+.kanahome-name {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* .kanahome-new-product {
+        margin-bottom: 50px;
+      } */
+
+.carouselimg {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.cardspc {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.discount {
+  border-radius: 3px;
+}
+
+.card-title {
+  color: black;
+  margin-top: 5px;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.card-text {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.row {
+  padding-bottom: 20px;
+}
+
+.marking {
+  border-bottom: 2px solid whitesmoke;
+  margin-top: 10px;
+}
+
+.kanahome-breadcrumbs {
+  margin-top: 20px;
+}
+
+.kanahome-breadcrumbs a {
+  color: #979797;
+  text-decoration: none;
+}
+
+.kanahome-breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.kanahome-breadcrumbs .breadcrumb {
+  background: transparent;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.kanahome-breadcrumbs .breadcrumb-item + .breadcrumb-item::before {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.about-head {
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  color: #336c7c;
+}
+
+.about-image {
+  border-radius: 10px;
+  width: 75%;
+}
+
+.footer {
+  border-top: 1px solid #e4e4e4;
+  /* margin-top: 200px; */
+}
+
+.contact {
+  color: #71c0fc;
+}
+
+.kanahome-tfooter {
+  padding-top: 50px;
+}
+
+.kanahome-bfooter {
+  padding-bottom: 50px;
+}
+
+.backgroundcolor {
+  background-color: whitesmoke;
+}
+
+.kanahome-about {
+  margin-bottom: 300px;
+}
+
+/* supaya ketika di klik menunya gak ada background biru, aku contohkan ganti hijau sesuai vibe website kamu ya,
+nanti bisa kamu ganti sesuai yang kamu mau, kita pakai pseudo class ya
+sumber: https://bitsofco.de/when-do-the-hover-focus-and-active-pseudo-classes-apply/
+*/
+
+a.dropdown-item:active {
+  background-color: #bcd9c7;
+}
+
+.text{
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kanahome</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light navbar-store shadow-sm"
+      style="background-color: whitesmoke"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="images/logokanahome.png"
+            alt="Kanahome logo"
+            width="150px"
+            height="50.89px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-5 me-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link" 
+                href="index.html#carousel" 
+                style="color: #336c7c"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" 
+              aria-current="page" 
+              style="color: #336c7c"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="index.html#promo"
+                style="color: #336c7c"
+                >Promo</a
+              >
+            </li>
+            <!-- <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="index.html"
+                style="color: #336c7c"
+                >Product</a
+              >
+            </li> -->
+            <li class="nav-item dropdown" style="padding-top: 0;">
+              <a class="nav-link dropdown-toggle navbar-link navcolor" href="#" data-bs-toggle="dropdown" style="color: #336c7c">Product</a>
+              <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="index.html#productkompor" style="color: #336c7c">Kompor</a></li>
+                  <li><a class="dropdown-item" href="index.html#productutensil" style="color: #336c7c">Utensil</a></li>
+                  <li><a class="dropdown-item" href="index.html#productpan" style="color: #336c7c">Alat Masak</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="index.html#contact"
+                style="color: #336c7c"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="container-fluid">
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="kanahome-breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item active">About</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="container kanahome-about">
+      <div class="row">
+        <div class="col-md-6 align-items-center text-center mt-0">
+          <img
+            src="images/about-image.jpg"
+            class="about-image shadow-lg"
+            alt=""
+          />
+        </div>
+        <div class="col-md-6 text-start text-md-start">
+          <h2 class="about-head">KOMPOR INDUKSI KANAHOME</h2>
+          <p class="text" style="color: grey">
+            Seperti yang kita tahu, umumnya masyarakat Indonesia masih
+            menggunakan kompor gas, tapi seiring dengan perkembangan jaman,
+            kompor induksi juga makin diminati lho!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Foote Section -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mx-auto">
+            <p class="footer pt-4 pb-2">
+              Copyright © 2022
+              <h style="color: #336c7c"><b>Kanahome </b>by Elektrigo</h>. All
+              Right Reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kanahome</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light navbar-kanahome shadow-sm"
+      style="background-color: whitesmoke"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="images/logokanahome.png"
+            alt="Kanahome logo"
+            width="150px"
+            height="50.89px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-5 me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" 
+              aria-current="page" 
+              href="#carousel" 
+              style="color: #336c7c"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" 
+              href="about.html" 
+              style="color: #336c7c"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"
+                aria-current="page"
+                href="#promo"
+                style="color: #336c7c"
+                >Promo</a
+              >
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link"
+                aria-current="page"
+                href="#product"
+                style="color: #336c7c"
+                >Product</a
+              >
+            </li> -->
+            <li class="nav-item dropdown" style="padding-top: 0;">
+              <a class="nav-link dropdown-toggle navbar-link navcolor" href="#" data-bs-toggle="dropdown" style="color: #336c7c">Product</a>
+              <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#productkompor" style="color: #336c7c">Kompor</a></li>
+                  <li><a class="dropdown-item" href="#productutensil" style="color: #336c7c">Utensil</a></li>
+                  <li><a class="dropdown-item" href="#productpan" style="color: #336c7c">Alat Masak</a></li>
+              </ul>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link"
+                aria-current="page"
+                href="#contact"
+                style="color: #336c7c"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="container-fluid">
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </nav>
+
+    <!-- Alert -->
+    <div class="backgroundcolor">
+      <div class="alert alert-success" role="alert">
+        <div class="container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-megaphone" viewBox="0 0 16 16">
+            <path d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-.214c-2.162-1.241-4.49-1.843-6.912-2.083l.405 2.712A1 1 0 0 1 5.51 15.1h-.548a1 1 0 0 1-.916-.599l-1.85-3.49a68.14 68.14 0 0 0-.202-.003A2.014 2.014 0 0 1 0 9V7a2.02 2.02 0 0 1 1.992-2.013 74.663 74.663 0 0 0 2.483-.075c3.043-.154 6.148-.849 8.525-2.199V2.5zm1 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0zm-1 1.35c-2.344 1.205-5.209 1.842-8 2.033v4.233c.18.01.359.022.537.036 2.568.189 5.093.744 7.463 1.993V3.85zm-9 6.215v-4.13a95.09 95.09 0 0 1-1.992.052A1.02 1.02 0 0 0 1 7v2c0 .55.448 1.002 1.006 1.009A60.49 60.49 0 0 1 4 10.065zm-.657.975 1.609 3.037.01.024h.548l-.002-.014-.443-2.966a68.019 68.019 0 0 0-1.722-.082z"/>
+          </svg>
+          "New Arrival on January 2022, <b id="check">check it out!</b>"
+          <!-- DOM 1 -->
+          <script>
+            document.getElementById("check").onmouseover = () => {
+              alert("You'll get 10% discount by using this code KANAHOME2022")
+            }
+          </script>
+        </div>
+      </div>
+
+      <!-- Carousel -->
+      <section id="carousel">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+                <!-- <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="3"
+                  aria-label="Slide 4"
+                ></button> -->
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="images/cnybanner.png"
+                    class="carouselimg"
+                    alt=""
+                  />
+                </div>
+                <!-- <div class="carousel-item">
+                  <img
+                    src="images/cnybanner2.png"
+                    class="carouselimg"
+                    alt=""
+                  />
+                </div> -->
+                <div class="carousel-item">
+                  <img
+                    src="images/banner_1.png"
+                    class="carouselimg"
+                    alt=""
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/banner_2.jpg"
+                    class="carouselimg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Special Product Section -->
+    <section id="promo">
+      <div class="cny-promo-product backgroundcolor">
+        <div class="container">
+          <div class="row kanahome-name">
+            <div class="col-12">
+              <h4 class="text-center mx-auto" style="color: #b7323a">Special for You</h4>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Preview1 -->
+            <div
+              class="col-12 col-md-4 mb-4"
+              style="width: 25%"
+              data-bs-toggle="modal"
+              data-bs-target="#modalPreview1"
+            >
+              <div class="card bg-light shadow-lg">
+                <img
+                  src="images/cnypackage.png"
+                  class="cardspc"
+                  alt=""
+                />
+                <div class="card-body">
+                  <div class="card-title">CNY Package</div>
+                  <div class="card-text">
+                    <b style="color: #95190f">Rp768.000</b><br>
+                    <h class="discount" style="background-color: #ffeaef; color: #ff6484;">5%</h>
+                    <s style="color: grey">Rp808.000</s>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal Preview1 -->
+            <div class="modal fade" id="modalPreview1">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Preview Barang</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="images/cnypackage.png" class="cardspc" alt=""/>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-success" data-bs-dismiss="modal">
+                      Oke
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Preview2 -->
+            <div
+              class="col-12 col-md-4 mb-4"
+              style="width: 25%"
+              data-bs-toggle="modal"
+              data-bs-target="#modalPreview2"
+            >
+              <div class="card bg-light shadow-lg">
+                <img src="images/fangfang.jpg" class="cardspc" alt="" />
+                <div class="card-body">
+                  <div class="card-title">Fang Hampers</div>
+                  <div class="card-text">
+                    <b style="color: #95190f">Rp243.000</b><br>
+                    <h class="discount" style="background-color: #ffeaef; color: #ff6484;">16%</h>
+                    <s style="color: grey">Rp289.000</s>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal Preview2 -->
+            <div class="modal fade" id="modalPreview2">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Preview Barang</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="images/fangfang.jpg" class="cardspc"/>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-success" data-bs-dismiss="modal">
+                      Oke
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Preview3 -->
+            <div
+              class="col-12 col-md-4 mb-4"
+              style="width: 25%"
+              data-bs-toggle="modal"
+              data-bs-target="#modalPreview3"
+            >
+              <div class="card bg-light shadow-lg">
+                <img src="images/meimei.jpg" class="cardspc" alt="" />
+                <div class="card-body">
+                  <div class="card-title">Mei Hampers</div>
+                  <div class="card-text">
+                    <b style="color: #95190f">Rp224.000</b><br>
+                    <h class="discount" style="background-color: #ffeaef; color: #ff6484;">21%</h>
+                    <s style="color: grey">Rp285.000</s>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal Preview3 -->
+            <div class="modal fade" id="modalPreview3">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Preview Barang</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="images/meimei.jpg" class="cardspc"/>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-success" data-bs-dismiss="modal">
+                      Oke
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Preview4 -->
+            <div
+              class="col-12 col-md-4 mb-4"
+              style="width: 25%"
+              data-bs-toggle="modal"
+              data-bs-target="#modalPreview4"
+            >
+              <div class="card bg-light shadow-lg">
+                <img src="images/lingling.jpg" class="cardspc" alt="" />
+                <div class="card-body">
+                  <div class="card-title">Ling Hampers</div>
+                  <div class="card-text">
+                    <b style="color: #95190f">Rp260.000</b><br>
+                    <h class="discount" style="background-color: #ffeaef; color: #ff6484;">16%</h>
+                    <s style="color: grey">Rp308.000</s>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal Preview4 -->
+            <div class="modal fade" id="modalPreview4">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Preview Barang</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="images/lingling.jpg" class="cardspc" />
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-success" data-bs-dismiss="modal">
+                      Oke
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Product Section -->
+      <div class="kanahome-new-product" style="background-color: #bcd9c7">
+      <div class="container">
+        <div class="row kanahome-name">
+          <div class="col-md-4 align-items-center text-center mt-0">
+          </div>
+          <div class="col-md-4 align-items-center text-center mt-0">
+            <h4 class="text-center mx-auto" style="color: white">New Product</h4>
+          </div>
+            <div class="col-md-4">
+            <form class="d-flex">
+              <input id="code" class="form-control me-2" placeholder="write your coupon code">
+              <button type="button" class="btn btn-outline-success" onclick="myFunction()">Redeem</button>
+              
+              <!-- DOM 2 -->
+              <script>
+                function myFunction() {
+                  let x = document.getElementById("code").value;
+                  let text;
+
+                  if(x=="KANAHOME2022") {
+                    text = "Enjoy 10% off for New Product";
+                  }
+                  else {
+                    text = "Invalid code"
+                  }
+                  document.getElementById("demo").innerHTML = text;
+                }
+              </script>
+
+            </form>
+
+            <h8 id="demo" style="color: #336c7c;"></h8>
+            </div>
+          </div>
+
+        <section id="productkompor">
+        <div class="row">
+          <h5 class="marking" style="color: whitesmoke">Kompor Induksi</h5>
+          <!-- Preview1 -->
+          <div class="col-6 col-md-3 col-lg-3">
+            <div class="card bg-light shadow-lg" data-bs-toggle="modal" data-bs-target="#modalNewPreview1">
+              <img src="images/k60l.jpg" class="rounded-3 w-100" alt="">
+              <div class="card-body">
+                <div class="card-title">Stove K-60L</div>
+                <div class="card-text">
+                  <b style="color: #336c7c">Rp550.000</b>
+                </div>
+              </div>
+              <!-- Modal New Preview1 -->
+              <div class="modal fade" id="modalNewPreview1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Preview Barang</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/k60l.jpg">
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-success" data-bs-dismiss="modal">
+                        Oke
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Preview2-->
+          <div class="col-6 col-md-3 col-lg-3">
+            <div class="card bg-light shadow-lg" data-bs-toggle="modal" data-bs-target="#modalNewPreview2">
+              <img src="images/k60m.jpg" class="rounded-3 w-100 alt="">
+              <div class="card-body">
+                <div class="card-title">Stove K-60M</div>
+                <div class="card-text">
+                  <b style="color: #336c7c">Rp522.500</b>
+                </div>
+              </div>
+              <!-- Modal New Preview2-->
+              <div class="modal fade" id="modalNewPreview2">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Preview Barang</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/k60m.jpg">
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-success" data-bs-dismiss="modal">
+                        Oke
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Preview3-->
+          <div class="col-6 col-md-3 col-lg-3">
+            <div class="card bg-light shadow-lg" data-bs-toggle="modal" data-bs-target="#modalNewPreview3">
+              <img src="images/k655l.jpg" class="rounded-3 w-100 alt="">
+              <div class="card-body">
+                <div class="card-title">Stove K-655L</div>
+                <div class="card-text">
+                  <b style="color: #336c7c">Rp685.500</b>
+                </div>
+              </div>
+              <!-- Modal New Preview3-->
+              <div class="modal fade" id="modalNewPreview3">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Preview Barang</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/k655l.jpg">
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-success" data-bs-dismiss="modal">
+                        Oke
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Preview4-->
+          <div class="col-6 col-md-3 col-lg-3">
+            <div class="card bg-light shadow-lg" data-bs-toggle="modal" data-bs-target="#modalNewPreview4">
+              <img src="images/k625.jpg" class="rounded-3 w-100 alt="">
+              <div class="card-body">
+                <div class="card-title">Stove K-625+</div>
+                <div class="card-text">
+                  <b style="color: #336c7c">Rp649.500</b>
+                </div>
+              </div>
+              <!-- Modal New Preview4-->
+              <div class="modal fade" id="modalNewPreview4">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Preview Barang</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/k625.jpg">
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-success" data-bs-dismiss="modal">
+                        Oke
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+        <section id="productutensil">
+        <div class="row">
+          <h5 class="marking" style="color: whitesmoke">Utensil</h5>
+          <!-- Preview5 -->
+          <div class="col-6 col-md-3 col-lg-3">
+            <div class="card bg-light shadow-lg" data-bs-toggle="modal" data-bs-target="#modalNewPreview5">
+              <img src="images/keikoblack.jpg" class="rounded-3 w-100" alt="">
+              <div class="card-body">
+                <div class="card-title">Keiko Black</div>
+                <div class="card-text">
+                  <b style="color: #336c7c">Rp160.000</b>
+                </div>
+              </div>
+              <!-- Modal New Preview5 -->
+              <div class="modal fade" id="modalNewPreview5">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Preview Barang</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/keikoblack.jpg">
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-success" data-bs-dismiss="modal">
+                        Oke
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Preview6-->
+          <div class="col-6 col-md-3 col-lg-3">
+            <div class="card bg-light shadow-lg" data-bs-toggle="modal" data-bs-target="#modalNewPreview6">
+              <img src="images/keikoabu.jpg" class="rounded-3 w-100 alt="">
+              <div class="card-body">
+                <div class="card-title">Keiko Abu</div>
+                <div class="card-text">
+                  <b style="color: #336c7c">Rp160.000</b>
+                </div>
+              </div>
+              <!-- Modal New Preview6-->
+              <div class="modal fade" id="modalNewPreview6">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Preview Barang</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/keikoabu.jpg">
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-success" data-bs-dismiss="modal">
+                        Oke
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Preview7-->
+          <div class="col-6 col-md-3 col-lg-3">
+            <div class="card bg-light shadow-lg" data-bs-toggle="modal" data-bs-target="#modalNewPreview7">
+              <img src="images/keikopink.jpg" class="rounded-3 w-100 alt="">
+              <div class="card-body">
+                <div class="card-title">Keiko Pink</div>
+                <div class="card-text">
+                  <b style="color: #336c7c">Rp160.000</b>
+                </div>
+              </div>
+              <!-- Modal New Preview7-->
+              <div class="modal fade" id="modalNewPreview7">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Preview Barang</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/keikopink.jpg">
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-success" data-bs-dismiss="modal">
+                        Oke
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Preview8-->
+          <div class="col-6 col-md-3 col-lg-3">
+            <div class="card bg-light shadow-lg" data-bs-toggle="modal" data-bs-target="#modalNewPreview8">
+              <img src="images/keikoblue.jpg" class="rounded-3 w-100 alt="">
+              <div class="card-body">
+                <div class="card-title">Keiko Blue</div>
+                <div class="card-text">
+                  <b style="color: #336c7c">Rp160.000</b>
+                </div>
+              </div>
+              <!-- Modal New Preview8-->
+              <div class="modal fade" id="modalNewPreview8">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Preview Barang</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/keikoblue.jpg">
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-success" data-bs-dismiss="modal">
+                        Oke
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </section>
+        <section id="productpan">
+          <h5 class="marking" style="color: whitesmoke">Alat Masak</h5>
+          <div class="row">
+          <!-- Preview9 -->
+          <div class="col-6 col-md-3 col-lg-3">
+            <div class="card bg-light shadow-lg" data-bs-toggle="modal" data-bs-target="#modalNewPreview9">
+              <img src="images/kuroset.jpg" class="rounded-3 w-100" alt="">
+              <div class="card-body">
+                <div class="card-title">Kuro Set</div>
+                <div class="card-text">
+                  <b style="color: #336c7c">Rp768.000</b><br>
+                  <h class="rounded-1" style="background-color: #ffeaef; color: #ff6484;">5%</h>
+                  <s style="color: grey">Rp808.000</s>
+                </div>
+              </div>
+              <!-- Modal New Preview9 -->
+              <div class="modal fade" id="modalNewPreview9">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Preview Barang</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/kuroset.jpg">
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-success" data-bs-dismiss="modal">
+                        Oke
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Preview10-->
+          <div class="col-6 col-md-3 col-lg-3">
+            <div class="card bg-light shadow-lg" data-bs-toggle="modal" data-bs-target="#modalNewPreview10">
+              <img src="images/kurosaucepan.jpg" class="rounded-3 w-100 alt="">
+              <div class="card-body">
+                <div class="card-title">Kuro Saucepan</div>
+                <div class="card-text">
+                  <b style="color: #336c7c">Rp249.000</b><br>
+                  <h class="rounded-1" style="background-color: #ffeaef; color: #ff6484;">13%</h>
+                  <s style="color: grey">Rp285.000</s>
+                </div>
+              </div>
+              <!-- Modal New Preview10-->
+              <div class="modal fade" id="modalNewPreview10">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Preview Barang</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/kurosaucepan.jpg">
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-success" data-bs-dismiss="modal">
+                        Oke
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Preview11-->
+          <div class="col-6 col-md-3 col-lg-3">
+            <div class="card bg-light shadow-lg" data-bs-toggle="modal" data-bs-target="#modalNewPreview11">
+              <img src="images/kurodeepfrypan.jpg" class="rounded-3 w-100 alt="">
+              <div class="card-body">
+                <div class="card-title">Kuro Deepfry</div>
+                <div class="card-text">
+                  <b style="color: #336c7c">Rp270.000</b><br>
+                  <h class="rounded-1" style="background-color: #ffeaef; color: #ff6484;">7%</h>
+                  <s style="color: grey">Rp289.000</s>
+                </div>
+              </div>
+              <!-- Modal New Preview11-->
+              <div class="modal fade" id="modalNewPreview11">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Preview Barang</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/kurodeepfrypan.jpg">
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-success" data-bs-dismiss="modal">
+                        Oke
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Preview12-->
+          <div class="col-6 col-md-3 col-lg-3">
+            <div class="card bg-light shadow-lg" data-bs-toggle="modal" data-bs-target="#modalNewPreview12">
+              <img src="images/kurocasserole.jpg" class="rounded-3 w-100 alt="">
+              <div class="card-body">
+                <div class="card-title">Kuro Casserole</div>
+                <div class="card-text">
+                  <b style="color: #336c7c">Rp289.000</b><br>
+                  <h class="rounded-1" style="background-color: #ffeaef; color: #ff6484;">6%</h>
+                  <s style="color: grey">Rp308.000</s>
+                </div>
+              </div>
+              <!-- Modal New Preview12-->
+              <div class="modal fade" id="modalNewPreview12">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Preview Barang</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/kurocasserole.jpg">
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-success" data-bs-dismiss="modal">
+                        Oke
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </section>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <section id="contact">
+    <div class="backgroundcolor">
+    <h3 class="text-center mx-auto kanahome-tfooter"><b>Contact Us</b></h3>
+    <h5 class="contact text-center mx-auto kanahome-bfooter">We'd love to hear from you</h5>
+    <div class="container">
+    <div class="row g-4 g-lg-0 align-items-center">
+    <div class="col-md-6 align-items-center text-center mt-0">
+      <img src="images/phonecs.png" class="about-image" alt=""/>
+    </div>
+    <div class="col-md-6">
+      <form>
+        <label for="email" class="form-label">E-mail Address</label>
+        <div class="mb-3 input-group">
+            <div class="input-group-text">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+              </svg>
+            </div>
+            <input type="email" class="form-control" id="email" placeholder="write your e-mail here">
+        </div>
+        <label for="name" class="form-label mt-2">Name</label>
+        <div class="mb-3 input-group">
+            <div class="input-group-text">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+              </svg>
+            </div>
+            <input type="text" class="form-control" id="name" placeholder="write your name here">
+        </div>
+        <label for="phone" class="form-label mt-2">Phone</label>
+        <div class="mb-3 input-group">
+            <div class="input-group-text">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+              </svg>
+            </div>
+            <input type="text" class="form-control" id="name" placeholder="write your phone number here">
+        </div>
+        <label for="feedback" class="form-label mb-2 mt-3">Your Messages</label>
+        <textarea id="feedback" class="form-control form-height"></textarea>
+        <div class="mt-4 text-center">
+            <button id="myBtn"  class="btn btn-lg btn-primary mb-2" style="background-color: #c5e1f6; border-color: #c5e1f6; border-radius: 10;">Submit</button>
+            <p id="demo"></p>
+            <!-- DOM 3 -->
+            <script>
+              document.getElementById("myBtn").addEventListener("click", function() {
+              alert("Thankyou for your feedback");
+              });
+            </script>
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+</div>
+</section>
+
+    <!-- Footer-->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mx-auto">
+            <p class="footer pt-4 pb-2">
+              Copyright © 2022 <h style="color: #336c7c;"><b>Kanahome </b>by Elektrigo</h>. All Right Reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
